@@ -9,9 +9,30 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../assets/fonts/Roboto-Light.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   .icons-menu:hover svg path {
-    @apply fill-golden; 
+    @apply fill-gray-light; 
   }
   .container-1280 {
     @apply max-w-screen-xl mx-auto;
@@ -23,5 +44,13 @@
 
   h1 {
     @apply font-playfair text-7xl;
+  }
+
+  h2 {
+    @apply font-playfair text-5xl text-golden-dark;
+  }
+
+  p {
+    @apply font-roboto text-gray-dark;
   }
 }
