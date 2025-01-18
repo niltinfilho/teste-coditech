@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../assets/fonts/PlayfairDisplay-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  .icons-menu:hover svg path {
+    @apply fill-golden; 
+  }
+  .container-1280 {
+    @apply max-w-screen-xl mx-auto;
+  }
+
+  .btn-default {
+    @apply p-4 bg-golden-dark hover:bg-golden text-white font-playfair transition-colors hover:underline;
+  }
+
+  h1 {
+    @apply font-playfair text-7xl;
+  }
+}
