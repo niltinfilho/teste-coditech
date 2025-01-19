@@ -31,6 +31,14 @@
 }
 
 @layer base {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
   .icons-menu:hover svg path {
     @apply fill-gray-light; 
   }
@@ -50,7 +58,17 @@
     @apply font-playfair text-5xl text-golden-dark;
   }
 
+  h3 {
+    @apply font-playfair text-2xl text-golden-dark;
+  }
+  
+  h4 {
+    @apply font-roboto text-2xl leading-none text-golden-dark;
+  }
+
   p {
     @apply font-roboto text-gray-dark;
   }
+
+
 }
