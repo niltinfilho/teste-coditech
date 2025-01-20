@@ -21,7 +21,12 @@ module.exports = {
       "transparent": "transparent",
     },
     backgroundImage: {
-      "hero": "url('/assets/advogados-associados-hero.jpg')"
+      "hero": "url('/assets/advogados-associados-hero.jpg')",
+      "civil": "url('/assets/direito-civil.jpg')",
+      "empresarial": "url('/assets/direito-empresarial.jpg')",
+      "trabalhista": "url('/assets/direito-trabalhista.jpg')",
+      "tributario": "url('/assets/direito-tributario.jpg')",
+      "contato": "url('/assets/entre-em-contato.jpg')",
     }
   },
   plugins: [],
