@@ -1,473 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teste Prático Coditech - Advogados Associados</title>
-    <link rel="shortcut icon" href="assets/favicon-advogados-associados.png" type="image/x-icon"/>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigiPro - Sua parceira digital para o sucesso!</title>
+  <link rel="shortcut icon" href="assets/logo-digipro.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="styles/output.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
-  <body class="w-full bg-yellow-light">
+  <link rel="stylesheet" href="styles/output.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
 
-    <!-- TOP BAR -->
-    <section class="bg-golden py-1 hidden lg:block">
-      <div class="container-1280 flex justify-between">
-        <div class="flex space-x-4">
-          <a href="#" class="icons-menu">
-            <!-- facebook icon -->
-            <svg class="transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
-              <path d="M232,128a104.16,104.16,0,0,1-91.55,103.26,4,4,0,0,1-4.45-4V152h24a8,8,0,0,0,8-8.53,8.17,8.17,0,0,0-8.25-7.47H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,8-8.53A8.17,8.17,0,0,0,167.73,80H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0-8,8.53A8.17,8.17,0,0,0,96.27,152H120v75.28a4,4,0,0,1-4.44,4A104.15,104.15,0,0,1,24.07,124.09c2-54,45.74-97.9,99.78-100A104.12,104.12,0,0,1,232,128Z"></path>
-            </svg>
-          </a>
-          <a href="#" class="icons-menu">
-            <!-- x icon -->
-            <svg class="transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
-              <path d="M215,219.85a8,8,0,0,1-7,4.15H160a8,8,0,0,1-6.75-3.71l-40.49-63.63L53.92,221.38a8,8,0,0,1-11.84-10.76l61.77-68L41.25,44.3A8,8,0,0,1,48,32H96a8,8,0,0,1,6.75,3.71l40.49,63.63,58.84-64.72a8,8,0,0,1,11.84,10.76l-61.77,67.95,62.6,98.38A8,8,0,0,1,215,219.85Z"></path>
-            </svg>
-          </a>
-          <a href="#" class="icons-menu">
-            <!-- instagram icon -->
-            <svg class="transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
-              <path d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24ZM128,176a48,48,0,1,1,48-48A48.05,48.05,0,0,1,128,176Zm60-96a12,12,0,1,1,12-12A12,12,0,0,1,188,80Zm-28,48a32,32,0,1,1-32-32A32,32,0,0,1,160,128Z"></path>
-            </svg>
-          </a>
-          <a href="#" class="icons-menu">
-            <!-- linkedin icon -->
-            <svg class="transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
-              <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140Z"></path>
-            </svg>
-          </a>
-        </div>
-        <div class="flex space-x-7">
-          <a href="#" class="flex space-x-2 items-center icons-menu text-white hover:text-gray-light">
-            <svg class="transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
-              <path d="M231.88,175.08A56.26,56.26,0,0,1,176,224C96.6,224,32,159.4,32,80A56.26,56.26,0,0,1,80.92,24.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,117.39,96c-.18.27-.37.52-.57.77L96,121.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,231.88,175.08Z"></path>
-            </svg>
-            <p class="text-white hover:text-gray-light transition-colors">(17) 99999-9999</p>
-          </a>
-          <a href="#" class="flex space-x-2 items-center icons-menu text-white hover:text-gray-light">
-            <svg class="transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
-              <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm56,112H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48a8,8,0,0,1,0,16Z"></path>
-            </svg>
-            <p class="text-white hover:text-gray-light transition-colors">Seg - Sex: 08h - 18h</p>
-          </a>
-          <a href="#" class="flex space-x-2 items-center icons-menu text-white hover:text-gray-light">
-            <svg class="transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256">
-              <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"></path>
-            </svg>
-            <p class="text-white hover:text-gray-light transition-colors">contato@advogadosassociados.com.br</p>
-          </a>
-        </div>
-      </div>
-    </section>
+<body class="w-full">
 
-    <!-- NAV SECTION -->
-    <section id="menu" class="container-1280 py-3 px-4 lg:px-0">
-      <header id="#header">
-        <nav class="flex items-center justify-between">
-          <a href="#menu">
-            <img
-              src="assets/logo-advogados-associados.png"
-              alt="Logo Advogados Associados"
-              class="w-40 lg:w-56 lg:h-24"
-            />
-          </a>
-          <div class="btn-dropdown lg:hidden p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#925f31" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>
-          </div>
-          <ul class="hidden lg:flex space-x-9 text-golden-dark">
-            <li class="py-4 font-playfair">
-              <a href="#header" class="hover:text-golden-light transition-colors hover:underline">Início</a>
-            </li>
-            <li class="py-4 font-playfair">
-              <a href="#about" class="hover:text-golden-light transition-colors hover:underline">Sobre nós</a>
-            </li>
-            <li class="py-4 font-playfair">
-              <a href="#services" class="hover:text-golden-light transition-colors hover:underline">Serviços</a>
-            </li>
-            <li class="py-4 font-playfair">
-              <a href="#faq" class="hover:text-golden-light transition-colors hover:underline">FAQ</a>
-            </li>
-            <li class="btn-default">
-              <a href="#contact">Contato</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </section>
-
-    <!-- MENU MOBILE -->
-    <section class="menu-items hidden bg-golden absolute w-full">
+  <!-- HEADER -->
+  <header>
+    <section>
+      <img src="assets/logo-digipro.png" alt="Logo DigiPro" />
       <nav>
-        <ul class="flex flex-col  text-white">
-          <li class="p-4 font-playfair">
-            <a href="#header">Início</a>
-          </li>
-          <li class="p-4 font-playfair">
-            <a href="#about">Sobre nós</a>
-          </li>
-          <li class="p-4 font-playfair">
-            <a href="#services">Serviços</a>
-          </li>
-          <li class="p-4 font-playfair">
-            <a href="#faq">FAQ</a>
-          </li>
-          <li class="p-4 font-playfair">
-            <a href="#contact">Contato</a>
-          </li>
-        </ul>
+        <a href="#about">O que a DigiPro é capaz de fazer?</a>
       </nav>
     </section>
+  </header>
+  <main>
 
     <!-- HERO SECTION -->
-    <section id="hero">
-      <div class="bg-hero bg-no-repeat bg-cover bg-top px-4 lg:p-0">
-        <div class="container-1280 text-white flex flex-col items-start space-y-6 pt-20 lg:pt-40 pb-20 lg:pb-32">
-          <h1 class="max-w-[260px] lg:max-w-[560px]">
-            Defendendo <span class="text-golden-light">Seus Direitos</span> com
-            <span class="text-golden-light">Excelência</span> e
-            <span class="text-golden-light">Integridade</span>
-          </h1>
-          <p class="max-w-xl text-white">
-            Oferecemos soluções jurídicas personalizadas e eficazes para atender
-            às suas necessidades. Nossa equipe de especialistas está
-            comprometida em garantir justiça e proteger seus interesses.
-          </p>
-          <a href="#services" class="btn-default">Conheça nossos serviços</a>
-        </div>
-      </div>
+    <section>
+      <article>
+        <h1>Transformamos <strong>Pequenos Negócios</strong> em <strong>Grandes Marcas</strong></h1>
+        <p>Alcance mais clientes, gere mais vendas e fidelize seu público com estratégias de marketing digital e tráfego
+          pago.</p>
+        <a href="#contact">Comece agora!</a>
+      </article>
+
+      <article>
+        <img src="assets/avatar-digipro.png" alt="Avatar DigiPro - Robô humanizado erguendo o braço" />
+      </article>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="container-1280 flex flex-col lg:flex-row justify-between items-center gap-y-10 lg:gap-y-0 lg:gap-x-14 px-4 lg:px-0 py-12 lg:py-28">
-      <div class="flex flex-col items-start space-y-5">
-        <h2>Conheça nosso escritório</h2>
-        <p>
-          Com anos de experiência e uma equipe altamente qualificada, somos
-          especialistas em diversas áreas do direito. Nosso compromisso é
-          oferecer um atendimento ético e estratégico para alcançar os melhores
-          resultados.
-        </p>
-        <p>Nosso diferencial está em nossa abordagem estratégica e no compromisso com a excelência. Acreditamos que cada cliente é único e, por isso, nossas soluções são adaptadas às necessidades específicas de cada caso. Além disso, investimos constantemente em tecnologia e inovação para proporcionar um atendimento mais eficiente e moderno.</p>
-        <div class="flex flex-col space-y-2">
-          <div class="flex space-x-2 items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#925f31" viewBox="0 0 256 256"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path></svg>
-            <p>Mais de 10 anos de experiência.</p>
-          </div>
-          <div class="flex space-x-2 items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#925f31" viewBox="0 0 256 256"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path></svg>
-            <p>Atuação em direito civil, empresarial, trabalhista e tributário.</p>
-          </div>
-          <div class="flex space-x-2 items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#925f31" viewBox="0 0 256 256"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path></svg>
-            <p>Histórico de sucesso em casos de alta complexidade.</p>
-          </div>
-        </div>
-        <a href="#" class="btn-default">Agende uma conversa</a>
-      </div>
-      <div class="max-w-2xl">
-        <img
-          src="assets/advogados-associados-team.jpg"
-          alt="Três advogadas analisando um dado importante no computador"
-        />
-      </div>
+    <!-- SOBRE NÓS SECTION -->
+    <section>
+      <article>
+        <h2>Soluções personalizadas para cada tipo de negócio</h2>
+        <p>Nossa equipe de especialistas está pronta para criar estratégias de marketing digital que se adaptam ao seu
+          negócio, maximizando seu alcance e aumentando suas vendas.</p>
+      </article>
     </section>
 
-    <!-- TEAM SECTION -->
-    <section id="team" class="container-1280 flex flex-col-reverse lg:flex-row justify-between items-center gap-y-10 lg:gap-y-0 lg:gap-x-14 px-4 lg:px-0 pb-12 lg:pb-28">
-      <div class="max-w-xl">
-        <div class="relative w-full mx-auto overflow-hidden">
-          <!-- Slider -->
-          <div class="flex snap-x snap-mandatory overflow-x-auto scroll-smooth scrollbar-hide" style="scrollbar-width: none; -ms-overflow-style: none;">
-            <!-- Slide 1 -->
-            <div class="w-full flex-shrink-0 snap-center">
-              <img src="team-1.jpg" alt="Slide 1" class="w-full h-auto">
-            </div>
-            <!-- Slide 2 -->
-            <div class="w-full flex-shrink-0 snap-center">
-              <img src="team-2.jpg" alt="Slide 2" class="w-full h-auto">
-            </div>
-            <!-- Slide 3 -->
-            <div class="w-full flex-shrink-0 snap-center">
-              <img src="team-4.jpg" alt="Slide 3" class="w-full h-auto">
-            </div>
-            <!-- Slide 4 -->
-            <div class="w-full flex-shrink-0 snap-center">
-              <img src="team-3.jpg" alt="Slide 4" class="w-full h-auto">
-            </div>
-          </div>
-        
-          <!-- Navigation Buttons -->
-          <div class="absolute inset-0 flex justify-between items-center">
-            <button id="prevBtn" class="bg-golden text-white p-1 m-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
-            </button>
-            <button id="nextBtn" class="bg-golden text-white p-1 m-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
-            </button>
-          </div>
-        
-          <!-- Dot Navigation -->
-          <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-            <button class="w-3 h-3 bg-gray-400 rounded-full"></button>
-            <button class="w-3 h-3 bg-gray-400 rounded-full"></button>
-            <button class="w-3 h-3 bg-gray-400 rounded-full"></button>
-            <button class="w-3 h-3 bg-gray-400 rounded-full"></button>
-          </div>
-        </div>
 
-      </div>
-      <div class="flex flex-col items-start space-y-5">
-        <h3>Profissionais qualificados prontos para te atender</h3>
-        <p>
-          Nosso time é composto por advogados altamente qualificados e especializados em diversas áreas do direito. Cada membro da nossa equipe traz um profundo conhecimento, experiência prática e um compromisso inabalável em oferecer as melhores soluções jurídicas aos nossos clientes.
-        </p>
-        <div class="flex flex-col space-y-2">
-          <div class="flex space-x-2 items-center">
-            <section class="counters space-y-2">
-              <div class="flex items-center">
-                <p>+</p>
-                <h4 class="counter pl-1 pr-3" data-target="2000">0</h4>
-                <p>clientes conquistados</p>
-              </div>
-              <div class="flex items-center">
-                <p>+</p>
-                <h4 class="counter pl-1 pr-3" data-target="150">0</h4>
-                <p>cidades atendidas</p>
-              </div>
-              <div class="flex items-center">
-                <h4 class="counter" data-target="100">0</h4>
-                <p class="pl-1 pr-3">%</p>
-                <p>de satisfação</p>
-              </div>
-            </section>
-          </div>
-        </div>
-        <a href="#" class="btn-default">Agende uma conversa</a>
-      </div>
-    </section>
+  </main>
+</body>
 
-    <!-- SERVICES SECTION -->
-     <section id="services" class="bg-white py-12 lg:py-28 px-4 lg:px-0">
-      <div class="container-1280">
-        <h2 class="text-center">Nossas áreas de atuação</h2>
-        <p class="max-w-3xl mx-auto mt-5 text-center">Nosso objetivo é oferecer suporte jurídico completo e acessível, ajudando você a tomar decisões informadas e seguras. Combinamos expertise e dedicação para entregar soluções legais que realmente fazem a diferença, sempre com foco em resultados.</p>
-        <div class="flex flex-col items-center gap-5 lg:gap-0 lg:flex-row lg:justify-between mt-8 lg:mt-20">
-          <div class="w-64 h-72 flex flex-col justify-end bg-civil p-3 space-y-3">
-            <h3 class="text-white">Direito civil</h3>
-            <p class="text-white">Soluções jurídicas em contratos, responsabilidade civil e mais.</p>
-            <a href="#" class="btn-smaller">Saiba mais</a>
-          </div>
-          <div class="w-64 h-72 flex flex-col justify-end bg-empresarial p-3 space-y-3">
-            <h3 class="text-white">Direito empresarial</h3>
-            <p class="text-white">Apoio jurídico para empresas de todos os portes.</p>
-            <a href="#" class="btn-smaller">Saiba mais</a>
-          </div>
-          <div class="w-64 h-72 flex flex-col justify-end bg-trabalhista p-3 space-y-3">
-            <h3 class="text-white">Direito trabalhista</h3>
-            <p class="text-white">Defesa de direitos trabalhistas e soluções empresariais.</p>
-            <a href="#" class="btn-smaller">Saiba mais</a>
-          </div>
-          <div class="w-64 h-72 flex flex-col justify-end bg-tributario p-3 space-y-3">
-            <h3 class="text-white">Direito tributário</h3>
-            <p class="text-white">Planejamento e consultoria tributária personalizada.</p>
-            <a href="#" class="btn-smaller">Saiba mais</a>
-          </div>
-        </div>
-      </div>
-     </section>
-
-     <!-- FAQ SECTION -->
-      <section id="faq" class="container-1280 flex flex-col lg:flex-row items-center py-12 lg:py-28 gap-y-8 lg:gap-y-0 gap-x-20 px-4 lg:px-0">
-        <div class="flex flex-col items-start space-y-5 max-w-xl">
-          <h2>Perguntas frequentes</h2>
-          <p>Sabemos que dúvidas podem surgir ao buscar serviços jurídicos, por isso reunimos aqui as respostas para as perguntas mais frequentes. Nosso objetivo é tornar tudo mais claro e acessível para você. Caso não encontre a informação que procura, entre em contato com nossa equipe.</p>
-          <div class="flex items-center space-x-4 mt-9">
-            <a href="#contact" class="btn-default">Entrar em contato</a>
-            <a href="#services" class="font-playfair underline hover:text-golden transition-colors">Saber mais</a>
-          </div>
-        </div>
-        <div class="flex flex-col space-y-4 w-full">
-          <details class="bg-gray-medium px-6 rounded-lg shadow-lg cursor-pointer" open>
-            <summary class="text-base font-medium py-6">Como funciona a consultoria inicial?</summary>
-            <div class="faq-answer">
-                <p class="paragraph text-black pb-6">
-                  Na consultoria inicial, analisamos sua situação e apresentamos as melhores opções jurídicas disponíveis.
-                </p>
-            </div>
-          </details>
-          <details class="bg-gray-medium px-6 rounded-lg shadow-lg cursor-pointer">
-            <summary class="text-base font-medium py-6">O escritório atende casos em outras cidades ou estados?</summary>
-            <div class="faq-answer">
-                <p class="paragraph text-black pb-6">
-                  Sim, temos experiência em atuar em processos fora de nossa cidade sede. Entre em contato para verificar como podemos atender sua demanda.
-                </p>
-            </div>
-          </details>
-          <details class="bg-gray-medium px-6 rounded-lg shadow-lg cursor-pointer">
-            <summary class="text-base font-medium py-6">É possível realizar atendimento online?</summary>
-            <div class="faq-answer">
-                <p class="paragraph text-black pb-6">Sim, oferecemos atendimentos virtuais por videoconferência para maior comodidade e agilidade.</p>
-            </div>
-          </details>           
-          <details class="bg-gray-medium px-6 rounded-lg shadow-lg cursor-pointer">
-            <summary class="text-base font-medium py-6">Quais áreas do direito o escritório atende?</summary>
-            <div class="faq-answer">
-                <p class="paragraph text-black pb-6">Atuamos em diversas áreas do direito, incluindo cível, trabalhista, empresarial, previdenciário, família e contratos. Consulte-nos para mais informações.</p>
-            </div>
-          </details>           
-        </div>
-      </section>
-
-      <!-- CONTACT SECTION -->
-       <section id="contact" class="bg-golden-dark flex px-4 lg:px-0">
-        <div class="w-[50%] hidden lg:block">
-          <img src="assets/entre-em-contato.jpg" alt="Advogado mexendo no celular enquanto olha algo no notebook">
-        </div>
-        <div class="lg:w-[50%] py-12 lg:py-28 space-y-5">
-          <h2 class="text-white text-center">Como podemos te ajudar?</h2>
-          <div class="max-w-[540px] w-full mx-auto bg-white p-4">
-            <form id="contact-form">
-              <fieldset>
-                <div class="flex flex-col gap-4">
-                  <div class="flex flex-col gap-1">
-                    <label for="name" class="text-sm font-medium">Nome <span class="!text-[#ff5f57]">*</span></label>
-                    <input
-                      type="text"
-                      aria-required="true"
-                      required
-                      aria-label="Nome completo"
-                      placeholder="Como prefere ser chamado(a)?"
-                      name="name"
-                      id="name"
-                      class="border border-gray-light px-4 py-2 h-12 rounded-lg text-black"
-                    />
-                  </div>
-                  <div class="grid md:grid-cols-2 gap-2">
-                    <div class="flex flex-col gap-1">
-                      <label for="email" class="text-sm font-medium text-blue-medium">E-mail <span class="!text-[#ff5f57]">*</span></label>
-                      <input
-                        type="email"
-                        aria-required="true"
-                        required
-                        aria-label="Endereço de e-mail"
-                        autocomplete="email"
-                        placeholder="seu-nome@empresa.com.br"
-                        name="email"
-                        id="email"
-                        class="border border-gray-light px-4 py-2 h-12 rounded-lg text-black"
-                      />
-                    </div>
-                    <div class="flex flex-col gap-1">
-                      <label for="whatsapp" class="text-sm font-medium text-blue-medium">WhatsApp <span class="!text-[#ff5f57]">*</span></label>
-                      <input
-                        type="text"
-                        aria-required="true"
-                        required
-                        aria-label="Número do WhatsApp com DDD"
-                        autocomplete="whatsapp"
-                        placeholder="(99) 99999-9999"
-                        name="whatsapp"
-                        id="whatsapp"
-                        class="border border-gray-light px-4 py-2 h-12 rounded-lg text-black"
-                      />
-                    </div>
-                  </div>
-                    <button class="btn-label">Entrar em contato</button>
-                  <p>
-                    <small>*Os dados pessoais coletados neste formulário têm por finalidade o retorno à mensagem enviada. Qualquer dúvida, basta entrar em contato com o encarregado.</small>
-                  </p>
-                </div> 
-              </fieldset>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <!-- FOOTER SECTION -->
-      <section class="bg-white py-12 lg:py-28 px-4 lg:px-0">
-        <div class="container-1280 flex flex-col gap-y-5 lg:gap-y-0 lg:flex-row justify-between">
-          <img
-            src="assets/logo-advogados-associados.png"
-            alt="Logo Advogados Associados"
-            class="w-80 h-32"
-          />
-          <div class="space-y-4">
-            <h2 class="text-xl">Menu</h2>
-            <ul class="space-y-3">
-              <li><a href="#about" class="hover:text-golden hover:underline">Sobre nós</a></li>
-              <li><a href="#team" class="hover:text-golden hover:underline">Nossa equipe</a></li>
-              <li><a href="#services" class="hover:text-golden hover:underline">Serviços prestados</a></li>
-              <li><a href="#contact" class="hover:text-golden hover:underline">Entrar em contato</a></li>
-            </ul>
-          </div>
-          <div class="space-y-4">
-            <h2 class="text-xl">Contato</h2>
-            <ul class="space-y-3">
-              <li class="flex space-x-2 items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#A57748" viewBox="0 0 256 256">
-                  <path d="M231.88,175.08A56.26,56.26,0,0,1,176,224C96.6,224,32,159.4,32,80A56.26,56.26,0,0,1,80.92,24.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,117.39,96c-.18.27-.37.52-.57.77L96,121.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,231.88,175.08Z"></path>
-                </svg>
-                <p>(17) 99999-9999</p>
-              </li>
-              <li class="flex space-x-2 items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#A57748" viewBox="0 0 256 256">
-                  <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm56,112H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48a8,8,0,0,1,0,16Z"></path>
-                </svg>
-                <p>Seg - Sex: 08h - 18h</p>
-              </li>
-              <li class="flex space-x-2 items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#A57748" viewBox="0 0 256 256">
-                  <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"></path>
-                </svg>
-                <p>contato@advogadosassociados.com.br</p>
-              </li>
-              <li class="flex space-x-2 items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#A57748" viewBox="0 0 256 256"><path d="M128,16a88.1,88.1,0,0,0-88,88c0,75.3,80,132.17,83.41,134.55a8,8,0,0,0,9.18,0C136,236.17,216,179.3,216,104A88.1,88.1,0,0,0,128,16Zm0,56a32,32,0,1,1-32,32A32,32,0,0,1,128,72Z"></path></svg>
-                <p>Rua Coditech, n° 1070 <br> Centro, Urânia - SP</p>
-              </li>
-            </ul>
-          </div>
-          <div class="space-y-4">
-            <h2 class="text-xl">Redes sociais</h2>
-            <div class="flex space-x-4">
-              <a href="#" class="icons-menu-footer">
-                <!-- facebook icon -->
-                <svg class="transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#A57748" viewBox="0 0 256 256">
-                  <path d="M232,128a104.16,104.16,0,0,1-91.55,103.26,4,4,0,0,1-4.45-4V152h24a8,8,0,0,0,8-8.53,8.17,8.17,0,0,0-8.25-7.47H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,8-8.53A8.17,8.17,0,0,0,167.73,80H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0-8,8.53A8.17,8.17,0,0,0,96.27,152H120v75.28a4,4,0,0,1-4.44,4A104.15,104.15,0,0,1,24.07,124.09c2-54,45.74-97.9,99.78-100A104.12,104.12,0,0,1,232,128Z"></path>
-                </svg>
-              </a>
-              <a href="#" class="icons-menu-footer">
-                <!-- x icon -->
-                <svg class="transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#A57748" viewBox="0 0 256 256">
-                  <path d="M215,219.85a8,8,0,0,1-7,4.15H160a8,8,0,0,1-6.75-3.71l-40.49-63.63L53.92,221.38a8,8,0,0,1-11.84-10.76l61.77-68L41.25,44.3A8,8,0,0,1,48,32H96a8,8,0,0,1,6.75,3.71l40.49,63.63,58.84-64.72a8,8,0,0,1,11.84,10.76l-61.77,67.95,62.6,98.38A8,8,0,0,1,215,219.85Z"></path>
-                </svg>
-              </a>
-              <a href="#" class="icons-menu-footer">
-                <!-- instagram icon -->
-                <svg class="transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#A57748" viewBox="0 0 256 256">
-                  <path d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24ZM128,176a48,48,0,1,1,48-48A48.05,48.05,0,0,1,128,176Zm60-96a12,12,0,1,1,12-12A12,12,0,0,1,188,80Zm-28,48a32,32,0,1,1-32-32A32,32,0,0,1,160,128Z"></path>
-                </svg>
-              </a>
-              <a href="#" class="icons-menu-footer">
-                <!-- linkedin icon -->
-                <svg class="transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#A57748" viewBox="0 0 256 256">
-                  <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140Z"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section> 
-
-    <script src="scripts/carousel.js"></script>
-    <script src="scripts/counter.js"></script>
-    <script src="scripts/dropdown.js"></script>
-  </body>
 </html>

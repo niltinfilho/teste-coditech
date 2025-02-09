@@ -1,0 +1,19 @@
+- HEADER
+
+logo
+
+(botao) O que a DigiPro é capaz de fazer?
+
+
+- HERO
+
+(titulo) Transformamos Pequenos Negócios em Grandes Marcas
+
+(subtitulo) Alcance mais clientes, gere mais vendas e fidelize seu público com estratégias de marketing digital e tráfego pago.
+
+(botao) Comece agora!
+
+
+- SOBRE NÓS
+
+(titulo) Por que escolher a DigiPro?
