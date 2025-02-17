@@ -28,9 +28,9 @@
   .container-960 {
     @apply max-w-[960px] mx-auto;
   }
-
+  
   .btn-default {
-    @apply py-3 px-6 bg-primary hover:bg-secondary rounded-full text-white font-semibold shadow-btn hover:shadow-btn-hover transition-all duration-300;
+    @apply py-3 px-6 bg-primary hover:bg-secondary rounded-full text-white text-xl shadow-btn hover:shadow-btn-hover transition-all duration-300;
   }
 
   /*.btn-smaller {
@@ -61,7 +61,7 @@
     @apply font-semibold;
   }
 
-  .lista-services li::before {
+  .lista li::before {
     content: "•";
     color: #0FBAC0;
     font-weight: bold;
