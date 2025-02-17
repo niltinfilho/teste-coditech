@@ -2,52 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: "";
   src: url("");
   font-style: ;
   font-display: swap;
-}
+} */
 
 @layer base {
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+
   .scrollbar-hide {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
   }
 
-  .container-1280 {
-    @apply max-w-screen-xl mx-auto;
+  .container-1024 {
+    @apply max-w-screen-lg mx-auto;
   }
 
-  /* .btn-default {
-    @apply ;
+  .container-960 {
+    @apply max-w-[960px] mx-auto;
   }
 
-  .btn-smaller {
+  .btn-default {
+    @apply py-3 px-6 bg-primary hover:bg-secondary rounded-full text-white font-semibold shadow-btn hover:shadow-btn-hover transition-all duration-300;
+  }
+
+  /*.btn-smaller {
     @apply ;
   } */
 
   h1 {
-    @apply text-4xl lg:text-7xl;
+    @apply text-4xl lg:text-6xl font-normal;
   }
 
   h2 {
-    @apply text-2xl lg:text-5xl;
+    @apply text-2xl lg:text-4xl font-normal;
   }
 
   h3 {
-    @apply text-xl lg:text-2xl;
+    @apply text-xl lg:text-3xl font-normal;
   }
-  
+
   h4 {
-    @apply text-2xl;
+    @apply text-2xl font-normal;
   }
 
   /* p {
     @apply;
   } */
 
+  strong {
+    @apply font-semibold;
+  }
+
+  .lista-services li::before {
+    content: "•";
+    color: #0FBAC0;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
 }
