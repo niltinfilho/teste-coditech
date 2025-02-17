@@ -18,7 +18,7 @@ module.exports = {
       "quaternary": "#cccccc",
 
       "bg-primary": "#060606",
-      "bg-secondary": "#050505",
+      "bg-secondary": "#040404",
       "bg-tertiary": "#111111",
 
       "white": "#ffffff",
