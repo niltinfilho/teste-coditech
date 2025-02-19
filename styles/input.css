@@ -21,6 +21,25 @@
     /* Firefox */
   }
 
+  details>summary {
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker {
+    display: none
+  }
+
+  summary::after {
+    content: url("../assets/icons/caret-right.svg");
+    margin-top: 4px;
+
+  }
+
+  details[open] summary:after {
+    content: url("../assets/icons/caret-down.svg");
+    margin-bottom: 4px;
+  }
+
   .container-1024 {
     @apply max-w-screen-lg mx-auto;
   }
@@ -28,7 +47,7 @@
   .container-960 {
     @apply max-w-[960px] mx-auto;
   }
-  
+
   .btn-default {
     @apply py-3 px-6 bg-primary hover:bg-secondary rounded-full text-white text-xl shadow-btn hover:shadow-btn-hover transition-all duration-300;
   }
