@@ -11,10 +11,10 @@
   <link rel="stylesheet" href="styles/main.css" />
 </head>
 
-<body class="w-full">
+<body class="w-full relative">
 
-  <!-- HEADER -->
-  <header class="bg-bg-primary pt-3 text-white">
+  <!-- HEADER DESKTOP -->
+  <header class="hidden lg:block bg-bg-primary pt-3 text-white">
     <section class="container-1024 flex justify-between items-center">
       <img src="assets/logo-digipro.svg" alt="Logo DigiPro" />
       <nav class="w-full">
@@ -29,21 +29,46 @@
     </section>
   </header>
 
+  <!-- HEADER MOBILE -->
+  <header class="lg:hidden bg-bg-primary pt-3 text-white">
+    <section class="container-1024">
+      <div class="flex justify-between items-center w-full">
+        <img src="assets/logo-digipro.svg" alt="Logo DigiPro" class="w-20" />
+        <span class="btn-menu-hamburger block"></span>
+      </div>
+      <nav class="w-full">
+        <ul
+          class="hidden menu-mobile-list absolute top-[120px] right-[-450px] bg-primary w-full flex-col gap-4 p-4 text-right justify-end font-semibold transition-all">
+          <li><a href="#services" class="hover:underline hover:text-primary transition-colors">Serviços que
+              prestamos</a></li>
+          <hr>
+          <li><a href="#method" class="hover:underline hover:text-primary transition-colors">Método DigiPro</a></li>
+          <hr>
+          <li><a href="#success" class="hover:underline hover:text-primary transition-colors">Cases de sucesso</a></li>
+          <hr>
+          <li><a href="#contact" class="hover:underline hover:text-primary transition-colors">Entrar em contato</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
   <main>
 
     <!-- HERO SECTION -->
     <section class="bg-bg-primary spacing text-white">
-      <article class="container-1024 flex justify-between items-center">
+      <article class="container-1024 flex flex-col lg:flex-row justify-between items-center">
         <div class="flex flex-col items-start">
           <h1>Transformamos <br><strong>Pequenos Negócios</strong><br> em <strong>Grandes Marcas</strong></h1>
-          <p class="mt-6 text-xl">Alcance mais clientes, gere mais vendas e fidelize seu público <br> com estratégias de
+          <p class="mt-4 lg:mt-6 text-xl">Alcance mais clientes, gere mais vendas e fidelize seu público <br> com
+            estratégias de
             marketing digital e tráfego
             pago.</p>
-          <a href="#contact" class="btn-default mt-12">Comece agora!</a>
+          <a href="#contact" class="btn-default mt-8 lg:mt-12">Comece agora!</a>
         </div>
 
 
-        <img src="assets/avatar-digipro.png" alt="Avatar DigiPro - Robô humanizado erguendo o braço" />
+        <img src="assets/avatar-digipro.png" alt="Avatar DigiPro - Robô humanizado erguendo o braço"
+          class="hidden lg:block" />
       </article>
     </section>
 
@@ -57,10 +82,11 @@
           investimentos avançados e
           consistentes.</p>
         <article>
-          <div class="container-960 mt-20 flex flex-col gap-8">
+          <div class="container-960 mt-12 lg:mt-20 flex flex-col gap-8">
 
             <!-- TRÁFEGO PAGO -->
-            <div id="trafego-pago" class="bg-bg-tertiary border border-tertiary rounded-3xl p-8 flex justify-between">
+            <div id="trafego-pago"
+              class="bg-bg-tertiary border border-tertiary rounded-3xl p-4 lg:p-8 flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between">
               <div class="text-left">
                 <img src="assets/icons/rocket-launch-fill.svg" alt="Foguete decolando" />
                 <h3 class="mt-8">Tráfego Pago</h3>
@@ -77,7 +103,7 @@
 
             <!-- SITES DE CONTEÚDO -->
             <div id="sites-de-conteudo"
-              class="bg-bg-tertiary border border-tertiary rounded-3xl p-8 flex justify-between">
+              class="bg-bg-tertiary border border-tertiary rounded-3xl p-4 lg:p-8 flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between">
               <div class="text-left">
                 <img src="assets/icons/browsers-fill.svg" alt="Abas de websites abertas" />
                 <h3 class="mt-8">Sites de Conteúdo</h3>
@@ -97,7 +123,7 @@
 
             <!-- SOLUÇÕES COMERCIAIS -->
             <div id="solucoes-comerciais"
-              class="bg-bg-tertiary border border-tertiary rounded-3xl p-8 flex justify-between">
+              class="bg-bg-tertiary border border-tertiary rounded-3xl p-4 lg:p-8 flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between">
               <div class="text-left">
                 <img src="assets/icons/currency-dollar-fill.svg" alt="Foguete decolando" />
                 <h3 class="mt-8">Soluções Comerciais</h3>
@@ -114,7 +140,8 @@
             </div>
 
             <!-- DASHBOARD -->
-            <div id="dashboards" class="bg-bg-tertiary border border-tertiary rounded-3xl p-8 flex justify-between">
+            <div id="dashboards"
+              class="bg-bg-tertiary border border-tertiary rounded-3xl p-4 lg:p-8 flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between">
               <div class="text-left">
                 <img src="assets/icons/chart-bar-fill.svg" alt="Foguete decolando" />
                 <h3 class="mt-8">Dashboards</h3>
@@ -158,7 +185,8 @@
                 <li>Aumentar as vendas em 20% no próximo trimestre.</li>
               </ul>
             </div>
-            <span class="absolute w-[1px] h-[272px] lg:h-[208px] bg-primary top-[60px] left-5 lg:top-[68px] lg:left-[26px]"></span>
+            <span
+              class="absolute w-[1px] h-[272px] lg:h-[208px] bg-primary top-[60px] left-5 lg:top-[68px] lg:left-[26px]"></span>
           </div>
 
           <div class="mt-16 relative">
@@ -174,7 +202,8 @@
                 <li my-3>Crie personas detalhadas para guiar a criação de conteúdo e estratégias de segmentação.</li>
               </ul>
             </div>
-            <span class="absolute w-[1px] h-[296px] lg:h-[160px] bg-primary top-[60px] left-5 lg:top-[68px] lg:left-[26px]"></span>
+            <span
+              class="absolute w-[1px] h-[296px] lg:h-[160px] bg-primary top-[60px] left-5 lg:top-[68px] lg:left-[26px]"></span>
           </div>
 
           <div class="mt-16 relative">
@@ -192,7 +221,8 @@
               <li>Automação e E-mail Marketing: Desenvolva funis de e-mail para nutrir leads e converter clientes em
                 potencial.</li>
             </ul>
-            <span class="absolute w-[1px] h-[348px] lg:h-[188px] bg-primary top-[60px] left-5 lg:top-[68px] lg:left-[26px]"></span>
+            <span
+              class="absolute w-[1px] h-[348px] lg:h-[188px] bg-primary top-[60px] left-5 lg:top-[68px] lg:left-[26px]"></span>
           </div>
 
           <div class="mt-16">
@@ -400,6 +430,8 @@
       </div>
     </footer>
   </main>
+
+  <script src="scripts/dropdown.js"></script>
 </body>
 
 </html>

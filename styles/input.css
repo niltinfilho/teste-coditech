@@ -89,4 +89,17 @@
     width: 1em;
     margin-left: -1em;
   }
+
+  .btn-menu-hamburger::after {
+    content: url("../assets/icons/list.svg");
+  }
+
+  .menu-mobile-list.active {
+    display: flex;
+    right: 0;
+  }
+
+  .btn-menu-hamburger.close::after {
+    content: url("../assets/icons/x.svg");
+  }
 }
